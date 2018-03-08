@@ -6,7 +6,7 @@ FinSpyVM analysis tools for Binary Ninja (inspired by Rolf Rolles)
 ## Description:
 
 This was inspired by the analysis of FinSpyVM made by [Rolf Rolles](http://www.msreverseengineering.com/blog/2018/1/23/a-walk-through-tutorial-with-code-on-statically-unpacking-the-finspy-vm-part-one-x86-deobfuscation)
-I've decided to make or migrate as much of the [tools](https://github.com/RolfRolles/FinSpyVM) he used for the analysis of FinSpyVM into Binary Ninja. This plugin is mostly of educational purposes for me to learn more about
+I've decided to make or migrate as much of the [tools](https://github.com/RolfRolles/FinSpyVM) he used for the analysis of FinSpyVM into Binary Ninja. This plugin is mostly of educational purposes for me to learn more about:
  * Binary Ninja plugin development
  * Virtualization based executable protectors
  
