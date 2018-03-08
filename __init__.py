@@ -1,0 +1,48 @@
+from binaryninja import *
+
+def deobfuscate_cond_x86(bv):
+    bwriter = BinaryWriter(bv)
+    breader = BinaryReader(bv)
+    instructions = [(insns, addr) for insns, addr in bv.instructions]
+    for insn, addr in instructions:
+        breader.seek(addr)
+        b1 = ord(breader.read(1))
+        if b1 >= 0x70 and b1 <= 0x7f:
+            d1 = ord(breader.read(1))
+            b2 = ord(breader.read(1))
+            d2 = ord(breader.read(1))
+            if (b1 ^ b2) == 0x01 and abs(d1 - d2) == 2:
+                bwriter.seek(addr)
+                bwriter.write("\xeb")
+                bwriter.seek(addr + 2)
+                bwriter.write("\x90\x90")
+                log_info("Modified address " + hex(addr))
+        if b1 == 0x0f:
+            b1_1 = ord(breader.read(1))
+            if b1_1 >= 0x80 and b1_1 <= 0x8f:
+                d1 = breader.read32()
+                b2 = ord(breader.read(1))
+                if b2 == 0x0f:
+                    b2_1 = ord(breader.read(1))
+                    if b2_1 >= 0x80 and b2_1 <= 0x8f:
+                        d2 = breader.read32()
+                        if (b1_1 ^ b2_1) == 1 and abs(d1 - d2) == 6:
+                            bwriter.seek(addr)
+                            bwriter.write("\xe9")
+                            bwriter.write32(d1 + 1)
+                            bwriter.write("\x90\x90\x90\x90\x90\x90\x90")
+                            log_info("Modified address " + hex(addr))
+
+def add_functions(bv):
+    start = AddressField("Start Address")
+    end   = AddressField("End Address")
+    if get_form_input([start, end], "Specify Pointer Range"):
+        br = BinaryReader(bv)
+        for pointer in range(start.result, end.result, 4):
+            br.seek(pointer)
+            addr = br.read32()
+            bv.add_function(addr)
+
+
+PluginCommand.register("cond_deobfuscator_x86", "Removes the popular conditional branch obfuscation in x86 assembly", deobfuscate_cond_x86)
+PluginCommand.register("add_functions", "Register functions based on range of pointers", add_functions)
