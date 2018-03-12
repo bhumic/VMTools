@@ -1,0 +1,630 @@
+{
+ "labels": [
+  {
+   "text": "COMCTL32!ImageList_Destroy@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1000"
+  }, 
+  {
+   "text": "COMCTL32!ImageList_Add@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1004"
+  }, 
+  {
+   "text": "COMCTL32!ImageList_Create@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1008"
+  }, 
+  {
+   "text": "COMCTL32!InitCommonControlsEx@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x100C"
+  }, 
+  {
+   "text": "COMCTL32!CreateToolbarEx@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1010"
+  }, 
+  {
+   "text": "GDI32!CreateCompatibleDC@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1018"
+  }, 
+  {
+   "text": "GDI32!CreateCompatibleBitmap@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x101C"
+  }, 
+  {
+   "text": "GDI32!SelectObject@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1020"
+  }, 
+  {
+   "text": "GDI32!BitBlt@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1024"
+  }, 
+  {
+   "text": "KERNEL32!GetCurrentProcess@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x102C"
+  }, 
+  {
+   "text": "KERNEL32!TerminateProcess@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1030"
+  }, 
+  {
+   "text": "KERNEL32!GetSystemTimeAsFileTime@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1034"
+  }, 
+  {
+   "text": "KERNEL32!GetCurrentThreadId@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1038"
+  }, 
+  {
+   "text": "KERNEL32!QueryPerformanceCounter@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x103C"
+  }, 
+  {
+   "text": "KERNEL32!GetModuleHandleA@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1040"
+  }, 
+  {
+   "text": "KERNEL32!SetUnhandledExceptionFilter@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1044"
+  }, 
+  {
+   "text": "KERNEL32!InterlockedCompareExchange@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1048"
+  }, 
+  {
+   "text": "KERNEL32!InterlockedExchange@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x104C"
+  }, 
+  {
+   "text": "KERNEL32!VirtualAlloc@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1050"
+  }, 
+  {
+   "text": "KERNEL32!IsBadReadPtr@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1054"
+  }, 
+  {
+   "text": "KERNEL32!GetCurrentProcessId@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1058"
+  }, 
+  {
+   "text": "KERNEL32!GetTickCount@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x105C"
+  }, 
+  {
+   "text": "KERNEL32!Sleep@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1060"
+  }, 
+  {
+   "text": "KERNEL32!ExitProcess@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1064"
+  }, 
+  {
+   "text": "KERNEL32!UnhandledExceptionFilter@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1068"
+  }, 
+  {
+   "text": "USER32!GetDC@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1070"
+  }, 
+  {
+   "text": "USER32!LoadCursorW@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1074"
+  }, 
+  {
+   "text": "USER32!EndPaint@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1078"
+  }, 
+  {
+   "text": "USER32!GetSystemMetrics@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x107C"
+  }, 
+  {
+   "text": "USER32!BeginPaint@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1080"
+  }, 
+  {
+   "text": "USER32!PostQuitMessage@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1084"
+  }, 
+  {
+   "text": "USER32!SendMessageW@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1088"
+  }, 
+  {
+   "text": "USER32!DispatchMessageW@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x108C"
+  }, 
+  {
+   "text": "USER32!TranslateMessage@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1090"
+  }, 
+  {
+   "text": "USER32!GetMessageW@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1094"
+  }, 
+  {
+   "text": "USER32!UpdateWindow@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1098"
+  }, 
+  {
+   "text": "USER32!ShowWindow@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x109C"
+  }, 
+  {
+   "text": "USER32!CreateWindowExW@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10A0"
+  }, 
+  {
+   "text": "USER32!RegisterClassExW@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10A4"
+  }, 
+  {
+   "text": "USER32!DefWindowProcW@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10A8"
+  }, 
+  {
+   "text": "USER32!MoveWindow@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10AC"
+  }, 
+  {
+   "text": "USER32!LoadBitmapW@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10B0"
+  }, 
+  {
+   "text": "USER32!ReleaseDC@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10B4"
+  }, 
+  {
+   "text": "msvcrt!__wgetmainargs@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10BC"
+  }, 
+  {
+   "text": "msvcrt!_cexit@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10C0"
+  }, 
+  {
+   "text": "msvcrt!_exit@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10C4"
+  }, 
+  {
+   "text": "msvcrt!_XcptFilter@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10C8"
+  }, 
+  {
+   "text": "msvcrt!exit@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10CC"
+  }, 
+  {
+   "text": "msvcrt!_initterm@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10D0"
+  }, 
+  {
+   "text": "msvcrt!_amsg_exit@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10D4"
+  }, 
+  {
+   "text": "msvcrt!__setusermatherr@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10D8"
+  }, 
+  {
+   "text": "msvcrt!_adjust_fdiv@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10DC"
+  }, 
+  {
+   "text": "msvcrt!__p__commode@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10E0"
+  }, 
+  {
+   "text": "msvcrt!__p__fmode@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10E4"
+  }, 
+  {
+   "text": "msvcrt!__set_app_type@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10E8"
+  }, 
+  {
+   "text": "msvcrt!?terminate@@YAXXZ@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10EC"
+  }, 
+  {
+   "text": "msvcrt!_controlfp@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10F0"
+  }, 
+  {
+   "text": "msvcrt!wcsrchr@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10F4"
+  }, 
+  {
+   "text": "msvcrt!_snwprintf@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10F8"
+  }, 
+  {
+   "text": "msvcrt!_wcsnicmp@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x10FC"
+  }, 
+  {
+   "text": "msvcrt!_except_handler3@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1100"
+  }, 
+  {
+   "text": "msvcrt!memset@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1104"
+  }, 
+  {
+   "text": "msvcrt!memcpy@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1108"
+  }, 
+  {
+   "text": "msvcrt!_wcsicmp@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x110C"
+  }, 
+  {
+   "text": "msvcrt!wcsncpy@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1110"
+  }, 
+  {
+   "text": "msvcrt!wcsncat@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1114"
+  }, 
+  {
+   "text": "ntdll!RtlUnwind@IAT", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x111C"
+  }, 
+  {
+   "text": "xor_decrypt", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x250B"
+  }, 
+  {
+   "text": "GetThreadId", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x25F3"
+  }, 
+  {
+   "text": "AllocateMemory", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x2677"
+  }, 
+  {
+   "text": "GetVMContextThreadArray", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x2A3F"
+  }, 
+  {
+   "text": "SetVMContextThreadArray", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x2A91"
+  }, 
+  {
+   "text": "main", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x6154"
+  }, 
+  {
+   "text": "_start", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0xAE64"
+  }, 
+  {
+   "text": "msvcrt!memcpy", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0xAE74"
+  }, 
+  {
+   "text": "msvcrt!memset", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0xAE80"
+  }, 
+  {
+   "text": "msvcrt!_except_handler3", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0xAEDE"
+  }, 
+  {
+   "text": "msvcrt!_XcptFilter", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0xB282"
+  }, 
+  {
+   "text": "msvcrt!_initterm", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0xB38C"
+  }, 
+  {
+   "text": "msvcrt!_amsg_exit", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0xB398"
+  }, 
+  {
+   "text": "ntdll!RtlUnwind", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0xB76A"
+  }
+ ], 
+ "comments": [
+  {
+   "text": "store ImageLoad address", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1FA9"
+  }, 
+  {
+   "text": "last DWORD in VMContext structure", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1AAD"
+  }, 
+  {
+   "text": "instruction blob size", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1BB3"
+  }, 
+  {
+   "text": "instruction blob RVA", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x20D7"
+  }, 
+  {
+   "text": "pointer to field_54", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1998"
+  }, 
+  {
+   "text": "instruction blob full address", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1E1A"
+  }, 
+  {
+   "text": "Get Current Thread ID\n", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x263B"
+  }, 
+  {
+   "text": "pointer to aplib compressed code", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1D45"
+  }, 
+  {
+   "text": "uncompressed", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1F4D"
+  }, 
+  {
+   "text": "xor decryption key", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1C2C"
+  }, 
+  {
+   "text": "size of compression code", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1E8A"
+  }, 
+  {
+   "text": "Get pointer to VMContext structure", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1D2B"
+  }, 
+  {
+   "text": "dst", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1A4C"
+  }, 
+  {
+   "text": "src", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1A4D"
+  }, 
+  {
+   "text": "aplib decompression", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1A4E"
+  }, 
+  {
+   "text": "Initialize Stack in VMContext", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1AAD"
+  }, 
+  {
+   "text": "compressed", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1971"
+  }, 
+  {
+   "text": "ImageBase to VMContext", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1FA9"
+  }, 
+  {
+   "text": "pointer to where decompressed instr are stored", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1D17"
+  }, 
+  {
+   "text": "pointer to field_54", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1998"
+  }, 
+  {
+   "text": "store pointer to decompressed instructions to VM context", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1C6C"
+  }, 
+  {
+   "text": "Establish posistion independent code", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1F60"
+  }, 
+  {
+   "text": "Save Registers and Flags (pre-initialization)", 
+   "manual": false, 
+   "module": "finspy", 
+   "address": "0x1BF6"
+  }
+ ]
+}
