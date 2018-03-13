@@ -3,10 +3,23 @@ ebp: 0x00001f65
 VMContext:
 field_0: pointer to curretn VMInstruction
 field_4:  0x00401aad: pointer to last DWORD in this structure (offset 0x0fffc)
+field_c:  0x004022a9: pointer to VM Initialization phase
+field_10: 0x00402389: pointer to VM re-entry sequence
+field_14: 0x004023b5: pointer to VM re-entry sequence 2
+field_18: 0x00402280: pointer to code to switch to another keyed block by displacement
+field_1C: 0x00402375: pointer to code to jump to next keyed block
 field_20: 0x00401c6c: pointer to decompressed VM instructions
+field_24: 0x004022ca: pointer to PIC base
 field_28: 0x00401fa9: dwBaseAddress
+field_2C: 0x004024A2: saved ESP before VM entry
+field_30: 0x004021F3: saved ESP before VM entry 2
+field_34: 0x0040243e: pointer to "key lookup instruction" function
+field_38: 0x00402206: decrypted 18-byte instruction
 field_50: 0x00401998: pointer to field_54
 
-VMInstruction:
-size:18
-field_0: DWORD specifying the opcode
+VMInstruction(size:18):
+field_0: DWORD specifying the opcode (key)
+field_4: BYTE opcode
+field_6: BYTE fixup_1
+field_7: BYTE fixup_2
+field_8: [0x10] data
