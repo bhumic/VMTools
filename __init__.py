@@ -43,6 +43,11 @@ def add_functions(bv):
             addr = br.read32()
             bv.add_function(addr)
 
+def dump_bytecode(bv):
+    # TODO
+    pass
 
-PluginCommand.register("cond_deobfuscator_x86", "Removes the popular conditional branch obfuscation in x86 assembly", deobfuscate_cond_x86)
-PluginCommand.register("add_functions", "Register functions based on range of pointers", add_functions)
+
+PluginCommand.register("x86 Conditional Branch Deobfuscator", "Removes the popular conditional branch obfuscation in x86 assembly", deobfuscate_cond_x86)
+PluginCommand.register("Add Functions...", "Register functions based on range of pointers", add_functions)
+PluginCommand.register("Dump FinSpy Bytecode", "Fetch, decompress, decrypt the FinSpy bytecode and dump it to disk", dump_bytecode)
