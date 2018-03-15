@@ -1,5 +1,9 @@
 from binaryninja import *
 
+
+image_base = 0x00400000
+
+
 def deobfuscate_cond_x86(bv):
     bwriter = BinaryWriter(bv)
     breader = BinaryReader(bv)
@@ -33,6 +37,7 @@ def deobfuscate_cond_x86(bv):
                             bwriter.write("\x90\x90\x90\x90\x90\x90\x90")
                             log_info("Modified address " + hex(addr))
 
+
 def add_functions(bv):
     start = AddressField("Start Address")
     end   = AddressField("End Address")
@@ -43,9 +48,33 @@ def add_functions(bv):
             addr = br.read32()
             bv.add_function(addr)
 
+
+def find_bytecode(bv):
+    rva_data = 0x2cda
+    rva_size = 0x2cd6
+    b_reader = BinaryReader(bv)
+
+    b_reader.seek(image_base + rva_size)
+    size = b_reader.read32()
+
+    b_reader.seek(image_base + rva_data)
+    data = b_reader.read32()
+
+    return (data, size)
+
+
+
+
 def dump_bytecode(bv):
-    # TODO
-    pass
+    bytecode_rva, size = find_bytecode(bv)
+    print hex(bytecode_rva)
+    print hex(size)
+    if size:
+        # bytecode is compressed
+        # TODO
+        pass
+    else:
+        log_info("VM bytecode is uncompressed. Unable to dump, due to unknown size")
 
 
 PluginCommand.register("x86 Conditional Branch Deobfuscator", "Removes the popular conditional branch obfuscation in x86 assembly", deobfuscate_cond_x86)
