@@ -1,0 +1,3 @@
+[submodule "kabopan"]
+	path = kabopan
+	url = https://github.com/snemes/kabopan.git
